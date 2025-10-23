@@ -6,12 +6,12 @@
     <title>Book Genres</title>
 </head>
 <body>
-    <h1>Ini adalah halaman genre buku</h1>
+    <h1>Halaman ini berisi informasi lengkap tentang genre-genre buku</h1>
 
-    @foreach ($genres as $item)
+    @foreach ($genres as $genre)
     <ul>
-        <li>{{$item['name']}}</li>
-        <li>{{$item['description']}}</li>
+        <li>{{$genre['name']}}</li>
+        <li>{{$genre['description']}}</li>
     </ul>
     @endforeach
 </body>

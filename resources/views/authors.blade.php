@@ -6,13 +6,13 @@
     <title>Book Authors</title>
 </head>
 <body>
-    <h1>Ini adalah halaman para author buku</h1>
+    <h1>Ini adalah halaman yang menampilkan informasi tentang para author buku</h1>
 
-    @foreach ($authors as $item)
+    @foreach ($authors as $author)
     <ul>
-        <li>{{$item['name']}}</li>
-        <li>{{$item['bio']}}</li>
-        <li>{{$item['photo']}}</li>
+        <li>{{$author['name']}}</li>
+        <li>{{$author['bio']}}</li>
+        <li>{{$author['photo']}}</li>
     </ul>
     @endforeach
 </body>

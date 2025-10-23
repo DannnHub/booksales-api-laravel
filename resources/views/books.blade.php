@@ -6,18 +6,18 @@
     <title>Selamat Datang</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>Selamat Datang di Toko BookSales!</p>
+    <h1>Selamat Datang di Toko BookSales!</h1>
+    <p>Berikut adalah buku-buku yang tersedia di toko kami:</p>
 
-    @foreach ($books as $item)
+    @foreach ($books as $book)
     <ul>
-        <li>{{$item['title']}}</li>
-        <li>{{$item['description']}}</li>
-        <li>{{$item['price']}}</li>
-        <li>{{$item['stock']}}</li>
-        <li>{{$item['cover_photo']}}</li>
-        <li>{{$item['genre_id']}}</li>
-        <li>{{$item['author_id']}}</li>
+        <li>{{$book['title']}}</li>
+        <li>{{$book['description']}}</li>
+        <li>{{$book['price']}}</li>
+        <li>{{$book['stock']}}</li>
+        <li>{{$book['cover_photo']}}</li>
+        <li>{{$book['genre_id']}}</li>
+        <li>{{$book['author_id']}}</li>
     </ul>
     @endforeach
 </body>
