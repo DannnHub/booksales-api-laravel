@@ -25,7 +25,7 @@ class BookSeeder extends Seeder
 
         Book::create([
             'title' => 'Naruto',
-            'description' => 'Kisah tentang seorang ninja atas jalan ninjanya.',
+            'description' => 'Kisah tentang seorang ninja yang mencari jalan ninjanya sendiri.',
             'price' => 29000,
             'stock' => 26,
             'cover_photo' => 'naruto.jpg',
